@@ -7,7 +7,7 @@
     "compile": "webpack --config webpack.config.cjs",
     "test": "jest",
     "lint": "eslint --ext js,ts lib/",
-    "css:preprocess" : "node sass-preprocessor.js",
+    "css:preprocess": "node sass-preprocessor.js",
     "css:scss:materials": "sass tmp/materials_scss/main.scss materials/public/css/main.css -I . -q --style=compressed && node color-tokenization.js",
     "css:scss:www": "sass tmp/www_scss/main.scss www/public/css/main.css -I . -q --style=compressed",
     "css:autoprefixer": "postcss -u autoprefixer -r materials/public/css/*.css && postcss -u autoprefixer -r www/public/css/*.css ",
