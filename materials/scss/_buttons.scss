@@ -1,0 +1,27 @@
+@import "node_modules/bootstrap/scss/buttons";
+
+.btn:not(.btn-link):not(.nav-link)  {
+  background: lightgrey;
+  color: color-yiq(lightgrey);
+  border: 2px outset lightgrey;
+  border-radius: unset;
+  box-shadow: unset;
+
+  &:hover {
+    background: darkgrey;
+    box-shadow: unset;
+    border-color: darkgrey;
+  }
+}
+
+.btn-link {
+  color: #00E;
+
+  &:hover {
+    color: #00A;
+  }
+}
+
+.btn-link:visited {
+  color: #551A8B;
+}

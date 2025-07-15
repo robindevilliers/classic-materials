@@ -1,7 +1,6 @@
 
 .explorer {
   min-width: 690px;
-  padding: 5px;
 
   .explorer-query {
     display: flex;
@@ -20,16 +19,15 @@
   }
 
   .input-group-text {
-    background-color: theme-color("secondary");
-    color: color-yiq(theme-color("secondary"));
+    background: unset;
+    color: unset;
+    border: unset;
   }
 
   .explorer-body {
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    //flex: 100% 1 0;
-    //background-color: #fff;
     height: 600px;
 
     .explorer-item-list {
@@ -52,26 +50,16 @@
         font-size: 14px;
         border-radius: 2px;
         line-height: 36px;
+        border: 1px $headerBackground solid;
         color: unset;
 
         &:hover {
-          background-color: theme-color("primary") !important;
-          color: color-yiq(theme-color("primary")) !important;
-          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.20);
+          background-color: $headerBackground !important;
+          color: color-yiq($headerBackground) !important;
         }
 
         & > *:not(:first-child) {
           margin-left: 1em;
-        }
-
-        &:nth-child(even) {
-          background-color: $alternatingEven;
-          color: color-yiq($alternatingEven);
-        }
-
-        &:nth-child(odd) {
-          background-color: $alternatingOdd;
-          color: color-yiq($alternatingOdd);
         }
       }
     }
@@ -92,25 +80,12 @@
         letter-spacing: .5px;
         font-size: 14px;
         outline: 0;
-        border: none;
-        border-radius: 25px;
         line-height: 36px;
         vertical-align: middle;
-        -webkit-tap-highlight-color: transparent;
-        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.20);
         max-width: unset;
         padding: 16px;
         margin: 0.5em 0;
-
-        &:nth-child(even) {
-          background: $alternatingOdd;
-          color: color-yiq($alternatingOdd);
-        }
-
-        &:nth-child(odd) {
-          background: $alternatingEven;
-          color: color-yiq($alternatingEven);
-        }
+        border: 1px $headerBackground solid;
 
         .explorer-line {
           display: flex;

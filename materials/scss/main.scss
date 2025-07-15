@@ -48,7 +48,7 @@ $theme-colors: (
 
 $alternatingEven: lighten(theme-color("info"), 10%);
 $alternatingOdd: lighten(theme-color("success"), 10%);
-$headerBackground: lighten(theme-color("muted"), 10%);
+$headerBackground: #e3e3e3;
 
 //Required
 @import "node_modules/bootstrap/scss/variables"; // Required
@@ -137,11 +137,11 @@ $headerBackground: lighten(theme-color("muted"), 10%);
 @import "node_modules/bootstrap/scss/grid";
 @import "node_modules/bootstrap/scss/tables";
 @import "forms";
-@import "node_modules/bootstrap/scss/buttons";
+@import "buttons";
 @import "node_modules/bootstrap/scss/transitions";
 @import "node_modules/bootstrap/scss/dropdown";
 @import "node_modules/bootstrap/scss/button-group";
-@import "node_modules/bootstrap/scss/input-group"; // Requires forms
+@import "input-group";
 @import "node_modules/bootstrap/scss/custom-forms";
 @import "node_modules/bootstrap/scss/nav";
 @import "node_modules/bootstrap/scss/navbar"; // Requires nav

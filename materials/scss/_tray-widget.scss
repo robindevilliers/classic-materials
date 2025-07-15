@@ -1,6 +1,5 @@
 
 .tray-widget {
-  padding: 5px;
 
   .panel-body {
     background-color: theme-color("primary") !important;
@@ -8,8 +7,8 @@
 
   .tray-body {
     .panel-item:hover {
-      background-color: theme-color("primary") !important;
-      color: color-yiq(theme-color("primary")) !important;
+      background-color: $headerBackground !important;
+      color: color-yiq($headerBackground) !important;
     }
 
     form {

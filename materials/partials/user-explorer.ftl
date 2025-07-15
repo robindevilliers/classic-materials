@@ -30,7 +30,7 @@
                         value="${lastName}" placeholder="Last Name">
 
                 <div class="input-group-append">
-                    <button type="submit" name="uSearch" class="btn btn-primary">Search</button>
+                    <button type="submit" name="uSearch" class="btn">Search</button>
                 </div>
             </div>
             <#list parameters as n, v>
@@ -99,7 +99,7 @@
                                         <form class="form-inline" method="get" action="${action}">
                                             <input type="hidden" name="principal" value="${val.username}"/>
                                             <div class="btn-group" role="group">
-                                                <button type="submit" aria-label="Select" class="btn btn-primary"
+                                                <button type="submit" aria-label="Select" class="btn"
                                                         name="actReturn">
                                                     Select
                                                 </button>
@@ -114,7 +114,7 @@
                                             <input type="hidden" name="_checkpoint" value="${_checkpoint}">
                                             <input type="hidden" name="username" value="${val.username}"/>
                                             <div class="btn-group" role="group">
-                                                <button type="submit" aria-label="Select" class="btn btn-primary"
+                                                <button type="submit" aria-label="Select" class="btn"
                                                         name="uSelect" id="select-button"
                                                         onclick="${testMode?string('alert(&quot;Select clicked&quot;); event.preventDefault();','')}">
                                                     Select
