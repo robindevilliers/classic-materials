@@ -5,8 +5,6 @@
   align-items: stretch;
 
   .error-summary {
-    background: theme-color("danger");
-    color: color-yiq(theme-color("danger"));
     margin-bottom: unset;
     flex: 1 1 auto;
     overflow: hidden;
@@ -14,10 +12,6 @@
     .header {
       color: inherit;
       font-size: 1.5em;
-    }
-
-    & .error-message {
-      color: color-yiq(theme-color("danger")) !important;
     }
   }
 }

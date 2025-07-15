@@ -1,0 +1,13 @@
+@import "node_modules/bootstrap/scss/input-group"; // Requires forms
+
+.input-group > .form-control {
+  margin: 0 0.25em;
+}
+
+.input-group-text {
+  border-radius: unset;
+}
+
+.input-group-prepend+.form-control {
+  margin-left: unset;
+}
