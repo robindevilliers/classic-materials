@@ -1,8 +1,6 @@
 .menu-widget {
   align-self: stretch;
 
-  border: 5px theme-color("primary") solid;
-  border-radius: 25px;
   padding: 0 1em;
 
   .menu-item-widget {
@@ -13,8 +11,6 @@
   }
 
   .dropdown-menu {
-    border: 5px theme-color("primary") solid;
-    border-radius: 25px;
     top: calc(100% - 1.5em);
   }
 
@@ -48,8 +44,6 @@
 }
 
 .navbar-light .navbar-toggler {
-  border: 3px theme-color("primary") solid;
-  border-radius: 12px;
   padding: 0 .25rem;
   margin: 0.125em;
 }
