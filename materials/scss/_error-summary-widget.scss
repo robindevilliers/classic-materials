@@ -1,10 +1,4 @@
 
 .error-summary-widget {
-  background: theme-color("danger");
-  color: color-yiq(theme-color("danger"));
   margin-bottom: 1rem !important;
-
-  & .error-message {
-    color: color-yiq(theme-color("danger")) !important;
-  }
 }
