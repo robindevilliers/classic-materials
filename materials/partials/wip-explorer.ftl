@@ -67,7 +67,7 @@
                             value="${endDate}" placeholder="End Date">
 
                     <div class="input-group-append">
-                        <button type="submit" name="mSearch" class="btn btn-primary"
+                        <button type="submit" name="mSearch" class="btn"
                                 onclick="${testMode?string('alert(&quot;Button clicked&quot;); event.preventDefault();','')}"
                         >Search
                         </button>
@@ -147,7 +147,7 @@
                                 enctype="application/x-www-form-urlencoded">
                             <input type="hidden" name="payload" value="${val.payload}">
                             <span class="explorer-button-line">
-                                    <button class="btn btn-primary"
+                                    <button class="btn"
                                             id="wip-explorer-item-${val.workflowId}-${val.wizardId}"
                                             onclick="${testMode?string('alert(&quot;Open clicked&quot;); event.preventDefault();','')}"
                                             type="submit">
