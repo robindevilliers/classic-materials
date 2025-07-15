@@ -41,9 +41,6 @@
 }
 
 .brand-outer {
-  border: 5px theme-color("primary") solid;
-  background: theme-color("primary");
-  border-radius: 25px;
   padding: 5px;
 
   .brand-inner {
@@ -52,10 +49,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.5em 1em;
-    background-color: $headerBackground;
 
     .title-text {
       font-family: $font-title-primary;
+      text-decoration: underline;
       font-size: 2.5rem;
       display: flex;
       flex-direction: column;

@@ -1,98 +1,96 @@
-
 .wip-tray-widget {
   display: flex;
   flex-direction: column;
   align-items: stretch;
 
   .wip-tray {
-    padding: 5px;
     flex: 1 1 auto;
     overflow: hidden;
-  }
 
-  &:not(.customise-panel) {
-    .panel-item:hover {
+    &:not(.customise-panel) {
+      .panel-item:hover {
+        background-color: $headerBackground !important;
+        color: color-yiq($headerBackground) !important;
+      }
+    }
+
+    .panel-body {
       background-color: theme-color("primary") !important;
-      color: color-yiq(theme-color("primary")) !important;
     }
-  }
 
-  .panel-body {
-    background-color: theme-color("primary") !important;
-  }
+    .wip-tray-body {
 
-  .wip-tray-body {
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+      }
 
-    form {
+      .wip-tray-button {
+        background-color: inherit;
+        display: flex;
+        cursor: pointer;
+        transition: background-color .2s ease-out;
+        flex-direction: column;
+        text-transform: unset;
+        text-decoration: none;
+        text-align: center;
+        letter-spacing: .5px;
+        font-size: 14px;
+        outline: 0;
+        border: none;
+        border-radius: 10px;
+        line-height: 36px;
+        vertical-align: middle;
+        -webkit-tap-highlight-color: transparent;
+        max-width: unset;
+        color: inherit;
+      }
+    }
+
+    .wip-tray-line {
       display: flex;
-      flex-direction: column;
-      justify-content: stretch;
+      width: 100%;
+      justify-content: space-between;
+
+      .wip-tray-wizard-title {
+        font-size: 1.25em;
+        font-family: $font-title-primary;
+      }
+
+      .wip-tray-description {
+        margin: 0 1em;
+        letter-spacing: initial;
+        line-height: initial;
+        font-family: $font-text;
+        text-decoration: none;
+        font-weight: normal;
+        font-size: unset;
+        font-style: normal;
+      }
+
+      .wip-tray-workflow-title {
+        align-self: flex-end;
+      }
+
+      .wip-tray-workflow-description {
+        align-self: flex-end;
+        font-family: $font-text;
+      }
+
+      .wip-tray-principal {
+        align-self: flex-end;
+      }
+
+      & > *:first-child {
+        margin-right: 1em;
+      }
     }
 
-    .wip-tray-button {
-      background-color: inherit;
+    .wip-tray-button-line {
       display: flex;
-      cursor: pointer;
-      transition: background-color .2s ease-out;
-      flex-direction: column;
-      text-transform: unset;
-      text-decoration: none;
-      text-align: center;
-      letter-spacing: .5px;
-      font-size: 14px;
-      outline: 0;
-      border: none;
-      border-radius: 10px;
-      line-height: 36px;
-      vertical-align: middle;
-      -webkit-tap-highlight-color: transparent;
-      max-width: unset;
-      color: inherit;
+      padding: 1em;
+      justify-content: flex-end;
     }
-  }
-
-  .wip-tray-line {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-
-    .wip-tray-wizard-title {
-      font-size: 1.25em;
-      font-family: $font-title-primary;
-    }
-
-    .wip-tray-description {
-      margin: 0 1em;
-      letter-spacing: initial;
-      line-height: initial;
-      font-family: $font-text;
-      text-decoration: none;
-      font-weight: normal;
-      font-size: unset;
-      font-style: normal;
-    }
-
-    .wip-tray-workflow-title {
-      align-self: flex-end;
-    }
-
-    .wip-tray-workflow-description {
-      align-self: flex-end;
-      font-family: $font-text;
-    }
-
-    .wip-tray-principal {
-      align-self: flex-end;
-    }
-
-    & > *:first-child {
-      margin-right: 1em;
-    }
-  }
-
-  .wip-tray-button-line {
-    display: flex;
-    padding: 1em;
-    justify-content: flex-end;
   }
 }
